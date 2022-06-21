@@ -1,0 +1,14 @@
+{
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.6",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.16"
+  },
+  "scripts": {
+    "watch": "nodemon app",
+    "start": "nodemon app"
+  }
+}
