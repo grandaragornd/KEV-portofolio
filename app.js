@@ -1,7 +1,7 @@
 const express =  require('express');
 const morgan = require('morgan');
 const app = express()
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // template engine
 app.set('view engine', 'ejs')
