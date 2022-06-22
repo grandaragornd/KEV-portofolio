@@ -245,12 +245,18 @@ nav a:hover {
 }
 
 .container-form {
+  text-align: center;
   padding: 40px;
-  margin: 50px;
+  margin: 100px;
   border-radius: 25px;
-  background: black;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(11%, rgba(0, 0, 0, 0.541521)), color-stop(84%, rgba(229, 225, 219, 0.63956)));
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.541521) 11%, rgba(229, 225, 219, 0.63956) 84%);
+  background-color: #f7f7ff;
+  background-color: #949494;
+  opacity: 0.7;
+  background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #949494 13px), repeating-linear-gradient(#00000055, #000000);
+}
+
+.container-form h1 {
+  color: white;
 }
 
 .form {
@@ -277,7 +283,7 @@ nav a:hover {
   background-color: whitesmoke;
   padding: 10px;
   margin: 10px;
-  width: 400px;
+  width: 100%;
   border: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

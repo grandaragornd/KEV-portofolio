@@ -220,19 +220,26 @@
 
 
 // contact // 
-
 .contact{
     padding: 30px;
     margin: 40px;
     text-align: center;
 }
 .container-form {
+  text-align: center;
   padding: 40px;
-  margin: 50px;
+  margin: 100px;
   border-radius: 25px;
-  background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,0.5415208319655987) 11%, rgba(229,225,219,0.6395600476518732) 84%);
+  background-color: #f7f7ff;
+  background-color: #949494;
+  opacity: 0.7;
+  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #949494 13px ), repeating-linear-gradient( #00000055, #000000 );
+  h1{
+    color: white;
+  }
+
 }
+
 .form{
   justify-content: center;
   align-items: center;
@@ -241,13 +248,11 @@
   flex-direction: column;
   justify-content: space-between;
   
-
   .field{
     background-color: whitesmoke;
-    
     padding: 10px;
     margin: 10px;
-    width: 400px;
+    width: 100%;
     border: 0px;
     box-sizing: border-box;
     border: none;
