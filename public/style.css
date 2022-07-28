@@ -61,11 +61,10 @@ nav a:hover {
   color: black;
   letter-spacing: 3px;
   font-size: 30px;
-  background: #000000;
-  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #000000), color-stop(82%, #FFAD0A));
-  background: linear-gradient(to right, #000000 10%, #FFAD0A 82%);
+  background: #003C40;
+  background: -webkit-gradient(linear, left top, right top, from(#003C40), color-stop(82%, #00CFCF));
+  background: linear-gradient(to right, #003C40 0%, #00CFCF 82%);
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -246,13 +245,9 @@ nav a:hover {
 
 .container-form {
   text-align: center;
-  padding: 40px;
-  margin: 100px;
+  padding: 100px;
+  margin: 50px;
   border-radius: 25px;
-  background-color: #f7f7ff;
-  background-color: #949494;
-  opacity: 0.7;
-  background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #949494 13px), repeating-linear-gradient(#00000055, #000000);
 }
 
 .container-form h1 {
@@ -277,6 +272,10 @@ nav a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 50px;
+  padding: 40px;
+  margin-top: -70px;
+  background-color: black;
 }
 
 .form .field {
@@ -315,8 +314,9 @@ nav a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   background-color: #242424;
   opacity: 0.9;
   color: white;
@@ -337,27 +337,9 @@ a:link, a:visited {
 @media screen and (max-width: 992px) {
   body {
     min-height: 100vh;
-    overflow-x: hidden;
   }
   body .nav-link {
-    padding-left: 0px;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    height: 100vh;
-    /* NAVIGATION BAR PHONE//
-        background-color: aquamarine;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 40%;
-        justify-content: space-evenly;
-        //TRANSFORMATION//
-        transform: translateX(100%) 
-        */
-  }
-  body a:hover {
-    background-color: white;
+    display: none;
   }
   body .burger div {
     width: 25px;
@@ -365,6 +347,8 @@ a:link, a:visited {
     background-color: black;
     margin: 5px;
     display: block;
+  }
+  body .burger {
     cursor: pointer;
   }
   body .nav-active {

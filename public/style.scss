@@ -54,21 +54,17 @@
     color: black;
     letter-spacing: 3px;
     font-size: 30px;
-    background: #000000;
-    background: -webkit-linear-gradient(to right, #000000 10%, #FFAD0A 82%);
-    background: -moz-linear-gradient(to right, #000000 10%, #FFAD0A 82%);
-    background: linear-gradient(to right, #000000 10%, #FFAD0A 82%);
+    background: #003C40;
+    background: linear-gradient(to right, #003C40 0%, #00CFCF 82%);
     -webkit-background-clip: text;
-    background-clip: text;
     -webkit-text-fill-color: transparent;
+
   }
 
   /* HEADER */
   .header{
-    
     color: black;
     text-align: center;
-
     .text-header {
         padding: 50px;
         margin: 40px;
@@ -227,17 +223,13 @@
 }
 .container-form {
   text-align: center;
-  padding: 40px;
-  margin: 100px;
+  padding: 100px;
+  margin: 50px;
   border-radius: 25px;
-  background-color: #f7f7ff;
-  background-color: #949494;
-  opacity: 0.7;
-  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #949494 13px ), repeating-linear-gradient( #00000055, #000000 );
+
   h1{
     color: white;
   }
-
 }
 
 .form{
@@ -247,6 +239,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 50px;
+  padding: 40px;
+  margin-top: -70px;
+  background-color: black;
   
   .field{
     background-color: whitesmoke;
@@ -283,11 +279,10 @@
     height: 10vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: #242424;
     opacity: 0.9;
     color: white;
-    
     p{
       font-size: 18px;
     }
@@ -306,40 +301,21 @@
    @media screen and (max-width: 992px) {
     body{
       min-height: 100vh;
-      overflow-x: hidden;
-
       .nav-link{
-        padding-left: 0px;
-        position: absolute;
-        right: 0px;
-        top: 0px;
-        height: 100vh;
-        /* NAVIGATION BAR PHONE//
-        background-color: aquamarine;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 40%;
-        justify-content: space-evenly;
-        //TRANSFORMATION//
-        transform: translateX(100%) 
-        */
-        
+       display: none;
     }
-
-    a:hover {
-      background-color: white;
-    }
-
+    
     .burger div {
       width: 25px;
       height: 3px;
       background-color: black;
       margin: 5px;
       display: block;
+    }
+    .burger{
       cursor: pointer;
     }
-
+  
     .nav-active {
       transform: translateX(0%);
     }
